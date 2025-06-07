@@ -1,10 +1,10 @@
-# 🧭 Simulador del Algoritmo de Dijkstra con Visualización
+# Simulador del Algoritmo de Dijkstra con Visualización
 
 Este proyecto es un **simulador educativo** del algoritmo de **Dijkstra**, diseñado para mostrar paso a paso cómo se encuentra el camino más corto en un grafo. Incluye salidas en consola y una visualización gráfica para entender claramente cómo se seleccionan las rutas óptimas.
 
 ---
 
-## 💡 ¿Qué resuelve este simulador?
+## ¿Qué resuelve este simulador?
 
 Este simulador representa una situación común en la vida real: **encontrar la ruta más corta o eficiente** entre distintos puntos conectados.
 
@@ -18,7 +18,7 @@ Este simulador representa una situación común en la vida real: **encontrar la 
 
 ---
 
-## 🎯 ¿Qué hace este simulador?
+## ¿Qué hace este simulador?
 
 - Calcula los **caminos más cortos** desde un nodo de origen a todos los demás.
 - Imprime en consola **paso a paso** cómo se visitan los nodos y se actualizan las distancias.
@@ -27,9 +27,9 @@ Este simulador representa una situación común en la vida real: **encontrar la 
 
 ---
 
-## 🔍 Ejemplo aplicado del simulador
+## Ejemplo aplicado del simulador
 
-### 🗺️ Escenario simulado:
+### Escenario simulado:
 
     ```python
     [
@@ -47,18 +47,18 @@ Este simulador representa una situación común en la vida real: **encontrar la 
         ('A', 'E', 10)
     ]
 
-## 📦 Ejemplo aplicado de logística
+## Ejemplo aplicado de logística
 
 Supón que cada nodo es una **sucursal** de una empresa de envíos, y los pesos representan los **costos de transporte** entre ellas.
 
 Si el centro de distribución está en `'A'`, el objetivo es llegar al punto final `'G'` de la forma más económica posible.
 
-✅ El simulador encuentra el camino más eficiente:
+ El simulador encuentra el camino más eficiente:
 
 A → B → C → D → F → G (costo total: 8)
 
 
-🔴 En cambio, otras rutas posibles como:
+ En cambio, otras rutas posibles como:
 
 A → E → G (costo total: 15)
 
@@ -68,7 +68,7 @@ Esta lógica es **idéntica** a cómo operaría un sistema de logística o una a
 
 ---
 
-### 🖥️ Salida real del simulador (resumen)
+### Salida real del simulador (resumen)
 
 ```bash
 Visitando nodo: C con distancia actual: 3
