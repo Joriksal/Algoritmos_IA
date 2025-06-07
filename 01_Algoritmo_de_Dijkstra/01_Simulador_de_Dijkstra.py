@@ -31,7 +31,7 @@ def dijkstra_verbose(graph, start):
 
             # Si encontramos una ruta mas cortas, actualizamos
             if distance < distances[neighbor]:
-                print(f" → Actualizando distancia de {neighbor} de {distances[neighbor]} a {distance}")
+                print(f"    Actualizando distancia de {neighbor} de {distances[neighbor]} a {distance}")
                 distances[neighbor] = distance                  # Actualizar la nueva distancia
                 previous[neighbor] = current_node               # Guardamos quien nos llevo a este nodo
                 heapq.heappush(queue, (distance, neighbor))     # Agregar el vecino a la cola de prioridad
