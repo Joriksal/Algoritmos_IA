@@ -1,20 +1,18 @@
 # Simulador del Algoritmo de Dijkstra con Visualización
 
-Este proyecto es un **simulador educativo** del algoritmo de **Dijkstra**, diseñado para mostrar paso a paso cómo se encuentra el camino más corto en un grafo. Incluye salidas en consola y una visualización gráfica para entender claramente cómo se seleccionan las rutas óptimas.
+Este proyecto es un simulador del algoritmo de Dijkstra, diseñado para mostrar paso a paso cómo se encuentra el camino más corto en un grafo. Incluye salidas en consola y una visualización gráfica para entender claramente cómo se seleccionan las rutas óptimas.
 
----
+## ¿Qué problema resuelve este simulador?
 
-## ¿Qué resuelve este simulador?
+Este simulador representa una situación común en la vida real: **encontrar la ruta más corta o eficiente** entre distintos puntos conectados, para ser mas concretos se determina un nodo de origen y a partir de ese busca el camino mas corto a todos los demas nodos que quedan.
 
-Este simulador representa una situación común en la vida real: **encontrar la ruta más corta o eficiente** entre distintos puntos conectados.
+# Aplicaciones reales simuladas en este proyecto:
 
-🔌 Ejemplos de la vida real donde se aplica Dijkstra (simulados aquí):
+- **Logisitica y rutas de entregas**: Modela un sistema de distribucion de paquetes, donde cada nodo representa una sucursal o punto de entrega, y las conexiones entre ellos tienen costo asociado (distancia, tiempo o dinero). El algoritmo permite encontrar la ruta mas barata desde un centro de distribucion hacia los destinos.
 
-- **Rutas de entrega**: Como una empresa de paquetería (tipo DHL o Amazon) que necesita entregar paquetes de forma eficiente. Cada nodo es una ciudad o punto de entrega, y las aristas (con peso) representan la distancia o el tiempo entre ubicaciones. El simulador encuentra el camino de entrega más rápido desde un centro de distribución.
+- **Redes de telecomunicaciones**: Los nodos representan dispositivos como routers, y las conexiones ponderadas simulan el retrdo o el costo de transmision. El algortimo permite hallar el camino mas rpaido o confiable para enviar datos.
 
-- **Redes de telecomunicaciones**: Imagínate routers conectados entre sí. El algoritmo ayuda a encontrar el camino más rápido para que un paquete de datos llegue a su destino. Aquí, el peso puede representar la latencia o la carga de la red.
-
-- **Videojuegos y GPS**: Dijkstra también se usa en videojuegos de estrategia o navegación GPS para calcular la mejor ruta evitando obstáculos o caminos largos.
+- **Sistemas de navegacion y videojuego**: En aplicaciones GPS o videojuegos de estrategia. Dijkstra se emplea para calcular rutas optimas evitando caminos largos o bloqueados.
 
 ---
 
@@ -25,11 +23,8 @@ Este simulador representa una situación común en la vida real: **encontrar la 
 - Muestra un **grafo visual**, donde los caminos más cortos se dibujan en **rojo**.
 - Permite modificar fácilmente el grafo y el nodo de inicio.
 
----
-
-## Ejemplo aplicado del simulador
-
-### Escenario simulado:
+### Escenario simulado en el codigo:
+El grafo representado en el cosigo contiene los siguientes nodos y conexiones:
 
     ```python
     [
@@ -46,19 +41,18 @@ Este simulador representa una situación común en la vida real: **encontrar la 
         ('B', 'E', 7),
         ('A', 'E', 10)
     ]
+    ```
 
-## Ejemplo aplicado de logística
+## Ejemplo aplicado: logistica de distribucion
 
-Supón que cada nodo es una **sucursal** de una empresa de envíos, y los pesos representan los **costos de transporte** entre ellas.
+Supongamos que la empresa desea enviar un paquete desde la sucursal A (Centro de distribucion) hasta la sucursal G (destino final). El objetivo es minimizar el costo total del trayecto.
+El simulador aplcia el algoritmo de Dikstra para encontrar la ruta de menor costo. En este caso, el resultado es:
 
-Si el centro de distribución está en `'A'`, el objetivo es llegar al punto final `'G'` de la forma más económica posible.
-
- El simulador encuentra el camino más eficiente:
+## Ruta optima:
 
 A → B → C → D → F → G (costo total: 8)
 
-
- En cambio, otras rutas posibles como:
+En cambio, otras rutas posibles como:
 
 A → E → G (costo total: 15)
 
